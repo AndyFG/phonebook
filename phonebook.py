@@ -34,7 +34,7 @@ class Phonebook:
         response = True
 
         try:
-            if number[0] == '+' and number[4:6] in ['87', '88', '89'] and 2 <= int(number[6]) <= 9:
+            if number[0:4] == '+359' and number[4:6] in ['87', '88', '89'] and 2 <= int(number[6]) <= 9:
                 if len(number[7:]) == 6:
                     for digit in number[7:]:
                         if 0 >= int(digit) >= 9:
