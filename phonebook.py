@@ -122,7 +122,7 @@ class Phonebook:
         phones = list(self.phonebook.items())
         phones.sort(key=sort_by, reverse=True)
 
-        for phone in phones[0:6]:
+        for phone in phones[0:5]:
             print(phone[1])
         if len(self.phonebook) == 0:
             print("Phone book is empty")
